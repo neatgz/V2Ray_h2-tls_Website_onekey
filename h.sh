@@ -269,7 +269,7 @@ modify_crontab(){
 
 #安装caddy主程序
 caddy_install(){
-	curl https://getcaddy.com | bash -s personal
+	curl https://getcaddy.com | bash -s personal http.filemanager
 
 	touch /etc/systemd/system/caddy.service
 	cat <<EOF > /etc/systemd/system/caddy.service
